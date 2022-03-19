@@ -105,6 +105,7 @@ input:focus {
     $('input').keyup(function(){
         let num = $(this).val()
         $('form').attr('action', `https://web.whatsapp.com/send?phone=91${num}&text&app_absent=0`)
+        $('a').attr('href', `https://web.whatsapp.com/send?phone=91${num}&text&app_absent=0`)
     })
 
   </script>
